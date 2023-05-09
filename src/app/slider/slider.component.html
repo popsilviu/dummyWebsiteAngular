@@ -1,0 +1,7 @@
+<div>
+  <button (click)="selectPreviousSlide()">Previous</button>
+  <div *ngFor="let image of images; index as i">
+    <img *ngIf="showSlideAtIndex(i)" src="{{ image }}" />
+  </div>
+  <button (click)="selectNextSlide()">Next</button>
+</div>
