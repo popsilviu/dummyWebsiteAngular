@@ -1,0 +1,19 @@
+.dot-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+span {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+span:active {
+  background-color: rgb(255, 213, 136);
+}

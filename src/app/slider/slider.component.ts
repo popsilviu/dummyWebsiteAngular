@@ -23,10 +23,12 @@ export class SliderComponent {
   }
 
   public selectPreviousSlide() {
-    if (this.currentSlide == 0) {      
+    if (this.currentSlide == 0) {
       this.currentSlide = this.images.length - 1;
     } else {
       this.currentSlide -= 1;
     }
   }
+
+  public changeSlideFromDot() {}
 }
