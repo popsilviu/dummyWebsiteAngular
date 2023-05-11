@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 export class SliderComponent {
   @Input() images: string[];
 
-  private currentSlide: number = 0;
+  public currentSlide: number = 0;
 
   public showSlideAtIndex(index: number) {
     return this.currentSlide === index;
@@ -30,5 +30,7 @@ export class SliderComponent {
     }
   }
 
-  public changeSlideFromDot() {}
+  public changeSlideFromDot(index: number) {
+    this.currentSlide = index;
+  }
 }

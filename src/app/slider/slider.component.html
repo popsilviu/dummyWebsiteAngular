@@ -5,6 +5,10 @@
   </div>
   <button (click)="selectNextSlide()">Next</button>
 </div>
-<div *ngFor="let image of images; index as i" class="dot-container">
-  <span (click)="changeSlideFromDot()"></span>
+<div class="dot-container">
+  <span
+    *ngFor="let image of images; index as i"
+    (click)="changeSlideFromDot(i)"
+    [ngClass]="{ active: currentSlide == i }"
+  ></span>
 </div>
