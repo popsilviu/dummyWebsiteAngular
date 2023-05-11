@@ -1,3 +1,8 @@
 <div *ngFor="let product of products">
-  <app-product class="products-container" [product]="product"></app-product>
+  <app-product
+    class="products-container"
+    [product]="product"
+    (instantBuyId)="instantBuyId($event)"
+    (addIdToCart)="addIdToCart($event)"
+  ></app-product>
 </div>

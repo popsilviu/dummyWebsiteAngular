@@ -10,6 +10,16 @@ export class ProductListComponent implements OnInit {
   public products: any;
 
   ngOnInit() {
-    this.httpService.getProducts().subscribe((data) => this.products = data);
+    this.httpService.getProducts().subscribe((data) => (this.products = data));
+  }
+
+  instantBuyId($event: any) {
+    console.log($event);
+    return;
+  }
+
+  addIdToCart($event: any) {
+    console.log($event);
+    return;
   }
 }
