@@ -4,3 +4,14 @@
   gap: 40px;
   margin-inline: 6em;
 }
+#sort-select {
+  margin-left: 5px;
+  font-size: 1rem;
+}
+
+#div-sort-select {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 100px;
+}

@@ -1,0 +1,5 @@
+{
+  // this was introduced when I changed the TS version from the VSCode's version (local)
+  //to the Workspace's version(project)
+  "typescript.tsdk": "node_modules\\typescript\\lib"
+}

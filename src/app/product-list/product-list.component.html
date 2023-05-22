@@ -1,8 +1,16 @@
+<div id="div-sort-select">
+  <h3>Sort by:</h3>
+  <select name="sort-select" id="sort-select" (change)="handleSelect($event)">
+    <option value="default" selected>Default</option>
+    <option value="priceAsc">Price low to high</option>
+    <option value="priceDesc">Price high to low</option>
+    <option value="A-Z">A-Z</option>
+    <option value="Z-A">Z-A</option>
+    <option value="ratingAsc">Rating low to high</option>
+    <option value="ratingDesc">Rating high to low</option>
+  </select>
+</div>
 <div *ngFor="let product of products">
-  <app-product
-    class="products-container"
-    [product]="product"
-    (instantBuyId)="instantBuyId($event)"
-    (addIdToCart)="addIdToCart($event)"
-  ></app-product>
+  <app-product class="products-container" [product]="product" (instantBuyId)="instantBuyId($event)"
+    (addIdToCart)="addIdToCart($event)"></app-product>
 </div>
