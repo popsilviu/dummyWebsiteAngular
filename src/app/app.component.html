@@ -1,5 +1,12 @@
-<app-shopping-cart></app-shopping-cart>
+<mat-toolbar>
+    <span>Dummy Website Angular</span>
 
-<app-product-list></app-product-list>
+    <span class="spacer"></span>
+    <button (click)="navigate('shopping-cart')" mat-icon-button>
+        <mat-icon>
+            shopping_cart_checkout
+        </mat-icon>
+    </button>
+</mat-toolbar>
 
 <router-outlet></router-outlet>

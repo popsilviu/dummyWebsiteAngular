@@ -7,3 +7,7 @@
 .product-title {
   text-align: center;
 }
+
+.product-card {
+  max-width: 400px;
+}

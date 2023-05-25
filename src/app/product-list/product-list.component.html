@@ -1,8 +1,6 @@
-<div *ngFor="let product of products">
-  <app-product
-    class="products-container"
-    [product]="product"
-    (instantBuyId)="instantBuyId($event)"
-    (addIdToCart)="addIdToCart($event)"
-  ></app-product>
-</div>
+<mat-grid-list cols="4" gutterSize="16px">
+  <mat-grid-tile *ngFor="let product of products">
+    <app-product class="products-container" [product]="product" (instantBuyId)="instantBuyId($event)"
+      (addIdToCart)="addIdToCart($event)"></app-product>
+  </mat-grid-tile>
+</mat-grid-list>
